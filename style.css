@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.container{
+ max-width: 1200px;
+    margin: auto;
+}
+nav svg{
+    width: 150px;
+    height: auto;
+    fill: rgb(229, 9, 20); 
+    filter:brightness(1.1)
+        contrast(1.8)
+        drop-shadow(0 0 6px rgb(255, 0, 13));  
+}
+.main{
+    background-image: url("Assets/Images/bg1.jpg");
+    height:80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    position:relative;
+}
+body{
+    background-color:black;
+}
+
+.main .box{
+    height:80vh;
+    width:100%;
+    background-color:black;
+    opacity:0.60;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+
+nav{
+    padding:16px;
+    width:60vw;
+    display:flex;
+    margin:auto;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction:row;
+    
+    
+    
+}
+nav img{
+    color:red;
+    width:114px;
+    position:relative;
+    z-index: 10;
+}
+
+nav button{
+    position:relative;
+    z-index: 10;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+   font-family: "Martel Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  position:relative;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 120px 20px 60px;
+    
+}
+.content span:first-child{
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+    padding:16px;
+    text-align:center;
+}
+
+.content span:nth-child(2){
+    font-size: 24px;
+    font-weight: 700;
+     color: white;
+     text-align:center;
+     
+}
+
+.content span:nth-child(3){
+    font-size: 20px;
+    font-weight: 300;
+     color: white;
+     padding:15px;
+     text-align:center;
+     
+}
+
+.start{
+    background-color:red;
+    color:white;
+    font-size:18px;
+    font-family: "Martel Sans";
+    font-weight:bolder;
+    height:48px;
+    width:190px;
+    font-size:24px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:400;
+    border:1px solid white;
+}
+
+input{
+    height:38px;
+    width:290px;
+    font-size:24px;
+    border-radius:5px;
+    background-color:rgba(23,23,23,0.2);
+    color:white;
+    padding:7px 101px 8px 14px;
+    border:1px solid white;
+
+}
+
+.seperation{
+    height:7px;
+    width:100%;
+    background-color: gray;
+    position: relative;
+    z-index: 20;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.language-box {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row; 
+}
+
+.language{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 15px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;  
+    display: flex;
+    flex-direction: row; 
+}
+
+.language-box::after {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none; 
+}
+
+.Email{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:3px ;
+    gap: 0px 14px;
+  
+}
+
+.Trending h2{
+    display:flex;
+    flex-direction: row;
+    font-family:"Martel-Sans";
+    font-weight:bold;
+    color:white;
+    height:40px;
+    width:170px;
+   padding: 0 0 20px 0;
+    font-size:27px;
+}
+.Trending{
+     padding: 50px 60px;
+    color: white;
+}
+
+.Trending-row{
+    display:flex;
+    gap:20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.Trending-row::-webkit-scrollbar{
+    display: none;
+}
+
+.movies
+{
+position:relative;
+flex-shrink: 0;
+width:250px;
+}
+
+
+.movies img{
+    width:100%;
+    height:350px;
+    border-radius:10px;
+    border-radius:0.5rem;
+    background-size: cover;
+    z-index:2;
+    display: block;
+
+    
+}
+
+.rank{
+    position: absolute;
+    bottom: -10px;
+    left: -14px;
+    font-size: 80px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    z-index:2;
+}
+
+.Reasons{
+    padding: 60px;
+    color: white;
+}
+
+.Reasons h2{
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.Reasons-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+
+.Reasons-card{
+     background: linear-gradient(135deg, #1b1b3a, #2a0f33);
+     border-radius:15px;
+     padding:25px;
+     min-height:280px;
+    position: relative;  
+}
+
+.Reasons-card h3{
+    font-size:24px;
+       margin-bottom: 12px;
+}
+
+.Reasons-card p{
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px){
+    .Reasons-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .Reasons-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .Trending-row{
+        gap: 12px;
+    }
+}
+
+.Reasons-card img{
+  
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    opacity: 0.9;
+}
+
+.movies:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.Reasons-card:hover{
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+}
+
+.faq{
+    background-color: black;
+    color:white;
+}
+
+.faq h2{
+    position:relative;
+    font-size:28px;
+    font-family:"Martel-sans";
+    font-weight:bold;
+    color:white;
+    padding:12px;
+    left:112px;
+}
+
+.faqbox{
+background-color: rgb(47, 45, 45);
+color:white;
+display:flex;
+flex-direction: row;
+padding:21px;
+gap:18px;
+margin:16px auto;
+justify-content: space-between;
+max-width: 80vw;
+cursor:pointer;
+}
+
+.faqbox span{
+    font-size:26px;
+    font-family:"Martel-sans";
+    font-weight:bold;
+    color:white;
+}
+.faqbox svg{
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0; 
+    filter: invert(1);
+    filter:invert(1);
+    display:flex;
+    flex-direction:row;
+    color:white;
+    justify-content: space-between;
+    font-weight:bold;
+}
+.faqbox:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;;
+
+}
+
+.Questions{
+    position:relative;
+    color:white;
+    font-size:26px;
+    font-family: "Martel-sans";
+    font-weight:bold;
+    padding:15px;
+    padding-left: 60px;
+}
+
+.footer-items{
+    position:relative;
+    padding-left: 60px;
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    color:white;
+    padding:25px;
+}
+
+.footer-items a{
+    color:white;
+    font-size:16px;
+
+}
+
+.end-content{
+    font-size: 20px;
+    font-weight: 300;
+     color: white;
+     padding:20px;
+     text-align:center;
+}
+
+.language-2{
+    position:relative;
+    justify-content: center;
+    text-align: center;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    height:38px;
+    width:140px;
+    cursor:pointer;
+    font-weight:400;
+    border:1px solid white;
+    padding-left: 60px;
+    gap:30px;
+
+}
+
+.end {
+    color:white;
+    font-size:24px;
+    padding:20px;
+    padding-left: 60px;
+}
+
+@media (max-width: 768px){
+    nav{
+        width: 90vw;
+    }
+
+    nav svg{
+        width: 110px;
+    }
+
+    .language{
+        width: 120px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .content span:first-child{
+        font-size: 32px;
+    }
+
+    .content span:nth-child(2){
+        font-size: 18px;
+    }
+
+    .content span:nth-child(3){
+        font-size: 16px;
+    }
+
+    .Email{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    .start.big{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .movies{
+        width: 160px;
+    }
+
+    .movies img{
+        height: 240px;
+    }
+
+    .rank{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px){
+    .Reasons{
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    footer{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-items{
+        left: 0;
+        padding-left: 20px;
+    }
+}
